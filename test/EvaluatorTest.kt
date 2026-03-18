@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
-class ExpressionEvaluatorTest {
+class EvaluatorTest {
     @Test
     fun throwsOnDivideByZero() {
         val expression = BinaryExpression(
@@ -11,7 +11,7 @@ class ExpressionEvaluatorTest {
         )
 
         assertThrows<IllegalArgumentException> {
-            ExpressionEvaluator.evaluate(expression)
+            Evaluator.evaluate(expression)
         }
     }
 }
